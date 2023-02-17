@@ -31,7 +31,7 @@ namespace MultivalueDynamicArrayTests
         [Test]
         public void should_return_dynamicArray_from_a_string_with_subvalues()
         {
-            _dynamicArray = "AAAA\\BBBB\\CCCC]BBBB]CCCC^BBBB^^Test]Test2]Test3]tesorito";
+            _dynamicArray = "AAAA\\BBBB\\CCCC]BBBB]CCCC^BBBB^^Test]Test2]Test3]Test4";
             
             Assert.AreEqual(_dynamicArray[1, 1, 1], "AAAA");
             Assert.AreEqual(_dynamicArray[1, 1, 2], "BBBB");
@@ -43,7 +43,7 @@ namespace MultivalueDynamicArrayTests
             Assert.AreEqual(_dynamicArray[4,1], "Test");
             Assert.AreEqual(_dynamicArray[4,2], "Test2");
             Assert.AreEqual(_dynamicArray[4,3], "Test3");
-            Assert.AreEqual(_dynamicArray[4,4], "tesorito");
+            Assert.AreEqual(_dynamicArray[4,4], "Test4");
         }
 
         [Test]
